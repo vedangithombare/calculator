@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function handlePercentBtn() {}
 
   function removeValue() {
-    
+
     if (currentNum.length > 0) {
       currentNum = currentNum.slice(0, -1);
     } else if (presentVal.length > 0) {
@@ -149,45 +149,3 @@ document.addEventListener("DOMContentLoaded", function () {
   removeBtn.addEventListener("click", () => removeValue());
 });
 
-/*
-ans :25
-6*3 = 18
-9 + 18 - 2 
-27 -2
-25
-solve bracket
-/
-*
-+
--
-
-*/
-
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] === "/") {
-//       let before = arr[i - 1];
-//       let after = arr[i + 1];
-//       const ans = after / before;
-//       arr.splice(i - 1, 3, ans);
-//     } else if (arr[i] === "*") {
-//       let before = arr[i - 1];
-//       let after = arr[i + 1];
-//       const ans = after * before;
-//       console.log(`${before} * ${after}`, ans);
-//       arr.splice(i - 1, 3, ans);
-//       console.log("after splice", arr);
-//     } else if (arr[i] === "+") {
-//       let before = arr[i - 1];
-//       let after = arr[i + 1];
-//       const ans = after + before;
-//       console.log(`${before} + ${after}`, ans);
-
-//       arr.splice(i - 1, 3, ans);
-//     } else if (arr[i] === "-") {
-//       let before = arr[i - 1];
-//       let after = arr[i + 1];
-//       const ans = after - before;
-//       console.log(` minus ${before} - ${after}`, ans);
-//       arr.splice(i - 1, 3, ans);
-//     }
-//   }
